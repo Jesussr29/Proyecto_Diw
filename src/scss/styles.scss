@@ -168,6 +168,80 @@ footer {
     background-color: c.$light;
 }
 
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .btn-primary, .btn-success {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    input.form-control, select.form-select, textarea.form-control {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    .hero-section {
+        .display-4 {
+            font-size: 1.75rem;
+        }
+    }
+
+    /* Estilos para la tabla en móviles */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table {
+        width: 100%;
+        font-size: 0.875rem;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 0.75rem;
+        text-align: left;
+        border: 1px solid c.$color-secundario;
+    }
+
+    th {
+        background-color: c.$color-primario;
+        color: white;
+    }
+
+    td {
+        background-color: c.$light;
+    }
+
+    /* Estilo para las celdas de acciones, para que los botones se acomoden mejor */
+    td button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
 
 
