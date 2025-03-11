@@ -1,0 +1,173 @@
+@use "base/custom" as c;
+
+
+body {
+    font-family: c.$fuente-texto; 
+    background-color: c.$color-fondo;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: c.$fuente-titulos;
+}
+
+.card {
+    background-color: lighten(c.$color-primario, 40%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.text-primary {
+    color: c.$color-primario !important;
+}
+
+.text-dark {
+    color: c.$color-texto !important;
+}
+
+.btn-primary {
+    background-color: c.$color-primario;
+    border-color: darken(c.$color-primario, 10%);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-primary:hover {
+    background-color: darken(c.$color-primario, 10%);
+}
+
+.bg-light {
+    background-color: c.$color-fondo !important;
+}
+
+footer {
+    color: c.$color-fondo;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.input-group .form-control {
+    border-radius: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+input:focus, button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5);
+}
+
+.invalid-feedback {
+    color: c.$color-error;
+}
+
+.success-message {
+    color: c.$color-exito;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: c.$primary; 
+}
+
+.navbar-brand {
+    font-family: c.$fuente-titulos;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    &:hover {
+        color: c.$success; 
+    }
+}
+
+.hero-section {
+    background-color: c.$color-primario; 
+    .display-4 {
+        font-family: c.$fuente-titulos;
+        font-weight: bold;
+    }
+    .btn-warning {
+        background-color: c.$warning; 
+        border-color: c.$warning;
+        &:hover {
+            background-color: darken(c.$warning, 10%);
+        }
+    }
+}
+
+.card {
+    background-color: c.$light; 
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-label {
+    font-family: c.$fuente-titulos;
+    font-weight: bold;
+    color: c.$dark;
+}
+
+input.form-control, textarea.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid c.$color-secundario;
+    &:focus {
+        border-color: c.$color-primario;
+        box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5);
+    }
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn-success {
+    background-color: c.$color-exito;
+    border-color: darken(c.$color-exito, 10%);
+    &:hover {
+        background-color: darken(c.$color-exito, 10%);
+        border-color: darken(c.$color-exito, 15%);
+    }
+}
+
+footer {
+    color: c.$light;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: c.$fuente-texto;
+    .text-white {
+        font-size: 0.875rem;
+    }
+}
+
+.modal-content {
+    border-radius: 1rem;
+}
+
+.modal-header {
+    color: c.$dark;
+}
+
+.modal-footer {
+    background-color: c.$light;
+}
+
+
+
+
