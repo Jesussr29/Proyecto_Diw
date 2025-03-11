@@ -1,0 +1,21 @@
+
+$fuente-titulos: 'Merriweather', serif;  
+$fuente-texto: 'Roboto', sans-serif;     
+
+$color-primario: #007bff; 
+$color-secundario: #6c757d; 
+$color-exito: #28a745; 
+$color-error: #dc3545; 
+$color-advertencia: #ffc107; 
+$color-fondo: #f8f9fa; 
+$color-texto: #212529; 
+
+$primary: $color-primario;
+$secondary: $color-secundario;
+$success: $color-exito;
+$danger: $color-error;
+$warning: $color-advertencia;
+$light: $color-fondo;
+$dark: $color-texto;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss'; 
